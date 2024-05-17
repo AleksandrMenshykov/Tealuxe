@@ -1,0 +1,62 @@
+.header {
+  margin-block: 30px 28px;
+  padding-bottom: 37px;
+  color: $color-darkText;
+
+  &__logo {
+
+    &-link {
+      display: block;
+      font-family: $font-IMFell;
+      font-size: 18px;
+      line-height: 22px;
+    }
+    
+    &-img {
+      display: block;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  &__menu {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    gap: 65px;
+    margin-bottom: 21px;
+  }
+
+  &__link {
+    font-family: $font-OpenSans-Regular;
+    font-size: 18px;
+    line-height: 1.36;
+    transition: .4s;
+
+    &:hover {
+      color: $color-hover;
+    }
+  }
+
+  &__user-bar {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    margin-bottom: 21px;
+  }
+
+  &__user-bar-login {
+    display: flex;
+    gap: 20px;
+  }
+
+  &__button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+}
