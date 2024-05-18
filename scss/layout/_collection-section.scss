@@ -3,6 +3,7 @@
   &__quotes {
     position: relative;
     font-family: $font-Cormorant-LightItalic;
+    color: $color-darkText;
     max-width: 705px;
     font-size: 40px;
     line-height: 1.125;
@@ -39,12 +40,5 @@
     &:hover {
       transform: scale(1.1);
     }
-  }
-
-  &__title {
-    font-family: $font-Cormorant-Regular;
-    font-size: 24px;
-    line-height: 1.2;
-    font-weight: 400;
   }
 }
