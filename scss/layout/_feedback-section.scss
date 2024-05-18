@@ -1,0 +1,27 @@
+.feedback {
+  padding-block: 60px;
+  background-color: $color-background-light;
+  color: $color-darkText;
+
+  &__block {
+    display: flex;
+    gap: 26px;
+  }
+
+  &__article {
+    flex: 0 1 280px;
+  }
+
+  &__text {
+    font-family: $font-OpenSans-LightItalic;
+    font-weight: 300;
+    line-height: 1.375;
+    margin-bottom: 10px;
+  }
+
+  &__username {
+    font-family: $font-OpenSans-SemiBold;
+    font-size: 20px;
+    line-height: 1.35;
+  }
+}
