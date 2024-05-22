@@ -1,5 +1,7 @@
 @import 'utils/variables';
+
 @import 'fonts';
+
 @import 'base/reset.scss';
 @import 'base/base';
 
@@ -8,89 +10,6 @@
 @import 'layout/collection-section';
 @import 'layout/feedback-section';
 @import 'layout/blog-section';
+@import 'layout/form-section';
+@import 'layout/prioritise-section';
 @import 'layout/footer';
-
-.form-section {
-  position: relative;
-  font-family: $font-OpenSans-Light;
-  background-color: $color-background-light;
-  padding-block: 100px;
-
-  &::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 673px;
-    height: 418px;
-    background-image: url(../images/form-background.png);
-  }
-
-  &__heding {
-    text-align: left;
-    margin-bottom: 50px;
-  }
-
-  &__inner {
-    display: flex;
-    gap: 40px;
-  }
-
-  &__text {
-    max-width: 580px;
-    font-size: 20px;
-    line-height: 1.5;
-  }
-
-  &__form {
-    position: relative;
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-  }
-
-  &__form-block {
-    display: flex;
-    align-items: flex-end;
-    gap: 25px;
-  }
-
-  &__input-email {
-    width: 100%;
-    font-size: 20px;
-    color: #B8B58B;
-    background-color: transparent;
-    border: none;
-    outline: none;
-    border-bottom: 1px solid #B8B58B;
-    padding: 3px;
-
-    &::placeholder {
-      font-size: 20px;
-      line-height: 1.5;
-      color: #B8B58B;
-    }
-  }
-
-  &__input-button {
-    padding: 12px 41px;
-    border: 1px solid $color-darkText;
-    font-size: 20px;
-    line-height: 27.25px;
-    cursor: pointer;
-    transition: .3s;
-
-    &:hover {
-      color: $color-lightText;
-      background-color: $color-hover;
-      border-color: $color-hover;
-    }
-  }
-
-  &__subscription-block {
-    display: flex;
-    align-items: baseline;
-    gap: 10px;
-  }
-}
