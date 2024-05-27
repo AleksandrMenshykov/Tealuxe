@@ -1,17 +1,38 @@
 .header {
-  margin-block: 30px 28px;
+  margin-block: 30px;
   padding-bottom: 37px;
   color: $color-darkText;
 
+  @media (max-width:1000px) {
+    padding-bottom: 0;
+  }
+
+  @media (max-width:600px) {
+    margin-block: 10px;
+  }
+
+  &__mobil-menu {
+    display: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    @media (max-width:800px) {
+      display: inline-block;
+      flex: 1 1 0;
+    }
+  }
+
+  &__menu-line {
+    display: block;
+    width: 40px;
+    height: 2px;
+    margin-bottom: 6px;
+    background-color: $color-darkText
+  }
+
   &__logo {
 
-    &-link {
-      display: block;
-      font-family: $font-IMFell;
-      font-size: 18px;
-      line-height: 22px;
-    }
-    
     &-img {
       display: block;
     }
@@ -21,6 +42,10 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+
+    @media (max-width:800px) {
+      align-items: center;
+    }
   }
 
   &__menu {
@@ -29,6 +54,10 @@
     flex-grow: 1;
     gap: 65px;
     margin-bottom: 21px;
+
+    @media (max-width:800px) {
+      display: none;
+    }
   }
 
   &__link {
@@ -47,6 +76,20 @@
     align-items: center;
     gap: 100px;
     margin-bottom: 21px;
+
+    @media (max-width:1000px) {
+      gap: 50px;
+    }
+
+    @media (max-width:800px) {
+      justify-content: flex-end;
+      flex: 1 1 0;
+      margin-bottom: 0;
+    }
+
+    @media (max-width:500px) {
+      gap: 20px;
+    }
   }
 
   &__user-bar-login {

@@ -3,12 +3,24 @@
   color: $color-lightText;
   padding: 254px 0 48px;
 
+  @media (max-width:500px) {
+    padding: 277px 0 50px;
+  }
+
+  @media (max-width:435px) {
+    padding: 233px 0 30px;
+  }
+
   &__bg {
     background-image: url(../images/hero-background.webp);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 71vh;
+    min-height: 500px;
     position: relative;
+
+    @media (max-width:500px) {
+      min-height: 367px;
+    }
 
     &::before {
       content: '';
@@ -33,11 +45,29 @@
     line-height: 1;
     font-weight: 400;
     margin-bottom: 20px;
+
+    @media(max-width:600px) {
+      font-size: 40px;
+      line-height: 1.225;
+    }
+
+    @media(max-width:435px) {
+      font-size: 24px;
+      line-height: 1.2;
+      margin-bottom: 10px;
+    }
   }
 
   &__description {
     max-width: 560px;
     font-size: 24px;
     line-height: 1.2;
+
+    @media(max-width:435px) {
+      font-size: 13px;
+      line-height: 1.36;
+    }
   }
+
+
 }
