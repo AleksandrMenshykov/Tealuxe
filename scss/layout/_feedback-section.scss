@@ -5,7 +5,10 @@
 
   &__block {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 26px;
+
   }
 
   &__article {
@@ -23,5 +26,17 @@
     font-family: $font-OpenSans-SemiBold;
     font-size: 20px;
     line-height: 1.35;
+  }
+}
+
+@media (max-width:1000px) {
+  .feedback__article:last-child {
+    display: none;
+  }
+}
+
+@media (max-width:768px) {
+  .feedback__article:last-child {
+    display: block;
   }
 }

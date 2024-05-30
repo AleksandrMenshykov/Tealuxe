@@ -22,6 +22,10 @@ body {
 
 .section {
   padding-block: 150px;
+
+  @media (max-width:1000px) {
+    padding-block: 120px;
+  }
 }
 
 .section-heading {
